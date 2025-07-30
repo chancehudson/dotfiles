@@ -1,5 +1,4 @@
--- Basic settings
-vim.opt.number = true
+-- Basic settings vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
@@ -9,7 +8,10 @@ vim.opt.tabstop = 4 -- sleuth will override
 -- Leader key
 vim.g.mapleader = " "
 
-vim.keymap.set('n', '\x1b[1;4H', '<C-w>h', { desc = 'Move to left windows' })
+vim.keymap.set('n', '<D-H>', '<C-w>h', { desc = 'Move to left window' })
+vim.keymap.set('n', '<D-J>', '<C-w>j', { desc = 'Move to window below' })
+vim.keymap.set('n', '<D-K>', '<C-w>k', { desc = 'Move to window above' })
+vim.keymap.set('n', '<D-L>', '<C-w>l', { desc = 'Move to right window' })
 
 -- Install lazy.nvim (plugin manager)
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
