@@ -1,0 +1,22 @@
+[window]
+dynamic_title = true
+
+[[keyboard.bindings]]
+key = "H"
+mods = "Super|Shift"
+chars = "\u001b[1;12H"
+
+[[keyboard.bindings]]
+key = "J"
+mods = "Super|Shift"
+chars = "\u001b[1;12J"
+
+[[keyboard.bindings]]
+key = "K"
+mods = "Super|Shift"
+chars = "\u001b[1;12K"
+
+[[keyboard.bindings]]
+key = "L"
+mods = "Super|Shift"
+chars = "\u001b[1;12L"
