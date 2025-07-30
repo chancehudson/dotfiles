@@ -5,10 +5,10 @@ compinit
 # VCS info for prompt
 autoload -Uz vcs_info
 
-zstyle ':vcs_info:git:*' actionformats '(%F{yellow}%b|%a%f)'
+zstyle ':vcs_info:git:*' actionformats '(%F{yellow}%b|%a%f) '
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' unstagedstr '%B%F{red}!%f%b'
-zstyle ':vcs_info:git:*' formats '(%F{magenta}%b%u%f)'
+zstyle ':vcs_info:git:*' formats '(%F{magenta}%b%u%f) '
 
 # Terminal window name
 preexec() {
@@ -22,7 +22,7 @@ precmd() {
 }
 
 setopt PROMPT_SUBST
-PROMPT='%F{green}%m%f %F{yellow}%~%f %(?.%F{green}Y%f.%F{red}N%f) ${vcs_info_msg_0_}%f $ '
+PROMPT='%F{green}%m%f %F{yellow}%~%f %(?.%F{green}Y%f.%F{red}N%f) ${vcs_info_msg_0_}%f$ '
 
 HISTFILE=~/.histfile
 HISTSIZE=1000

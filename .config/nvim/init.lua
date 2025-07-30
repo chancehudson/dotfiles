@@ -121,12 +121,44 @@ require("lazy").setup({
         enable_diagnostics = true,
         
         default_component_configs = {
+          -- Add the icon configuration here
+          icon = {
+            folder_closed = "",
+            folder_open = "",
+            folder_empty = "󰜌",
+            default = "*",
+            highlight = "NeoTreeFileIcon"
+          },
+          modified = {
+            symbol = "",
+            highlight = "NeoTreeModified",
+          },
+          name = {
+            trailing_slash = true,
+            use_git_status_colors = true,
+            highlight = "NeoTreeFileName",
+          },
+          git_status = {
+            symbols = {
+              -- Change type
+              added     = "",
+              modified  = "",
+              deleted   = "✖",
+              renamed   = "󰁕",
+              -- Status type
+              untracked = "",
+              ignored   = "",
+              unstaged  = "*",
+              staged    = "+",
+              conflict  = "!",
+            }
+          },
           diagnostics = {
             symbols = {
               hint = "󰌶",
-              info = "ℹ️",
-              warn = "⚠️",
-              error = "❌",
+              info = "",
+              warn = "",
+              error = "✖",
             },
             highlights = {
               hint = "DiagnosticSignHint",
