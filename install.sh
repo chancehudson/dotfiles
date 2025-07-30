@@ -1,18 +1,18 @@
-#!/bin/sh
+#!/bin/bash
 
 ln .zshrc ~/.zshrc
 
 # sway config
 mkdir -p ~/.config/sway
-ln .config/sway/config ~/.config/sway/config
+ln -f .config/sway/config ~/.config/sway/config
 
 # neovim config
 mkdir -p ~/.config/nvim
-ln .config/nvim/init.lua ~/.config/nvim/init.lua
+ln -f .config/nvim/init.lua ~/.config/nvim/init.lua
 
 # alacritty config
 mkdir -p ~/.config/alacritty
-ln .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+ln -f .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 # install fonts
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
