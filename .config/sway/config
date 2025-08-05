@@ -69,8 +69,8 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term 
-    #bindsym $mod+Return exec 'swaymsg "split horizontal; exec $TERM"; sleep 0.5; swaymsg "resize set width 30 ppt"'
+    bindsym $mod+Return exec 'swaymsg "split horizontal; exec $term"'
+    bindsym $mod+Shift+Return exec 'swaymsg "split vertical; exec $term"'
 
     # Kill focused window
     bindsym $mod+q kill
@@ -202,7 +202,7 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-#bindsym $mod+r mode "resize"
+bindsym $mod+r mode "resize"
 
 #
 # Status Bar:
