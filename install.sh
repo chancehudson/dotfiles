@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ln .zshrc ~/.zshrc
+ln -f .zshrc ~/.zshrc
 
 # sway config
 mkdir -p ~/.config/sway
